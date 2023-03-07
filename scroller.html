@@ -1,0 +1,68 @@
+<html>
+<body>
+<table width = "500">
+<tr>
+
+<td height ="200" width = "100">
+<img src = "image_scroll/forward.gif" onclick = "scroll_forward()">
+</td>
+
+<td width = "300">
+<img src = "image_scroll/pic_1.jpg" name ="pic1">
+</td>
+
+<td width = "100">
+<img src = "image_scroll/back.gif" onclick = "scroll_backward()">
+</td>
+
+</tr>
+</table>
+<script>
+var p1 = new Image();
+var p2 = new Image();
+var p3 = new Image();
+var p4 = new Image();
+var p5 = new Image();
+
+p1.src = "image_scroll/pic_1.jpg";
+p2.src = "image_scroll/pic_2.jpg";
+p3.src = "image_scroll/pic_3.jpg";
+p4.src = "image_scroll/pic_4.jpg";
+p5.src = "image_scroll/pic_5.jpg";
+
+var imgArray = new Array(p1, p2, p3, p4, p5);
+
+var counter=0;
+var end = imgArray.length -1;
+
+function scroll_backward()
+{
+if(counter == 0)
+{
+alert("Start of Pictures");
+}
+else
+{
+counter--;
+}
+document.pic1.src = imgArray[counter].src;
+}
+
+function scroll_forward()
+{
+if(counter == end)
+{
+alert("No more pictures");
+}
+else
+{
+counter++;
+}
+document.pic1.src = imgArray[counter].src;
+}
+</script>
+</body>
+</html>
+
+
+

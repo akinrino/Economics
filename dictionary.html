@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/0ce5433672.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/temp.css">
+</head>
+<body  onload="sorting()">
+    <header>
+        <nav>
+            <h1>ECONOMICS DICOURSE</h1>
+            <menu>
+            <a href="javascript:void(0);" class="navburger" onclick="hamburger()"><i id="bars" class="fas fa-bars" aria-label="bar"></i>
+                <i id="ex" class="fas fa-times"></i></a>
+            <script src="script/navigation.js"></script>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="microeconomics.html">Microeconomics</a></li>
+                <li><a href="macroeconomics.html">Macroeconomics</a></li>
+                <li><a href="dictionary.html" class="active">Dictionary</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <input type="text" id="mySearch" onkeyup="search()" placeholder="Search" title="Type in a name">
+
+        <details>
+            <summary>Economics</summary>
+             <p>A social science geared towards the allocation of scarce resources.</p>
+        </details>
+
+        <details>
+            <summary>Scarcity</summary>
+            <p>In economics scarcity does not mean small or little. It arises when the demand for a resource 
+                is greater than the supply. As a result of scarcity economic agent has to make the best decision
+                in allocating scarce resources.
+            </p>
+        </details>
+        <details>
+            <summary>Supply</summary>
+            <p>This is the amount of resourse that a producer is willing and able to sell at a given point in time</p>
+        </details>
+        <details>
+            <summary>Demand</summary>
+            <p>This is the amount of goods and services that a consumer is willing and able to purchase at a given 
+                point in time
+            </p>
+        </details>
+        <details>
+            <summary>Equilibrium price</summary>
+            <p>This is the price at which the quantity demanded and the quantity supplied is equal. In macroeconomics 
+                the aggregate demand and the aggregate supply in the economy is equal</p>
+        </details>
+        <details>
+            <summary>Aggregate Demand</summary>
+            <p>This is the total amount of goods and services that consumers are willing and able to buy at a given price level in the 
+                economy during a period of time</p>
+        </details>
+        <details>
+            <summary>Aggregate Supply</summary>
+            <p>This is the total amount of goods and services that producers are willing and able to sell at a given price level in the 
+                economy during a period of time</p>
+        </details>
+        <details>
+            <summary>Inflation</summary>
+            <p>An increase in the price level of goods and services in the economy at a given point in time</p>
+        </details>
+        <details>
+            <summary>Deflation</summary>
+            <p>A decrease in the price level of goods and services in the economy at a period of time</p>
+        </details>
+        <details>
+            <summary>Disinflation</summary>
+            <p>A decrease in the inflation rate. For example the inflation rate in March is 10% and in the next 
+                month, April the inflation rate is 8%.</p>
+        </details>
+        <details>
+            <summary>Ceteris Paribus</summary>
+            <p>This is a Latin phrase commonly used in economcs which means "All other things beings equal".</p>
+        </details>
+        <details>
+            <summary>Elasticity</summary>
+            <p>A measure of the response of an economic variable to a change in another economic variable</p>
+        </details>
+        <details>
+            <summary>Gross Domestic Product</summary>
+            <p>The amount of goods and services produced in a country at a given point in time</p>
+        </details>
+        <details>
+            <summary>Law of Demand</summary>
+            <p>All other things being equal, the higher the price the lower the quantity demanded and the lower the price the higher the quantity demanded</p>
+        </details>
+        <details>
+            <summary>Law of Supply</summary>
+            <p>All other things being equal, the lower the price the lower the quantity supplied and the higher the price the higher the quantity supplied</p>
+        </details>
+        <details>
+            <summary>The invisible hand</summary>
+            <p>Refers to the benefits society enjoys due to the selfish interest of individuals. This was propounded by Adam Smith to advocate for the benefits 
+                of Capitalism</p>
+        </details>
+        <details>
+            <summary>Capitalism</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Socialism</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Stagflation</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Opportunity cost</summary>
+            <p>The cost of the best alternative forgone</p>
+        </details>
+        <details>
+            <summary>Monopoly</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Duopoly</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Oligopoly</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Growth rate</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Fiscal policy</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Macroeconomics</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Microeconomics</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Money Supply</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Unemployment</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Monetary policy</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Development economics</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Financial economics</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Wants</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Perfect Competion</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Autarky</summary>
+            <p>Refers to an economy that is self-sufficent with limited trade. The economy produces most (if not all) of their goods domestically</p>
+        </details>
+        <details>
+            <summary>Monetary Economics</summary>
+            <p></p>
+        </details>
+        <details>
+            <summary>Time value of money</summary>
+            <p></p>
+        </details>
+        <script src="script/search.js"></script>
+        <script> 
+        function sorting(){
+            var a = document.getElementsByTagName('details');
+            var switching = true;
+            while (switching) {
+                switching = false;
+                for (var i = 0; i < (a.length - 1); i++) {
+                    var Switch = false;
+                    if (a[i].innerHTML.toLowerCase() > a[i +1].innerHTML.toLowerCase()) {
+                        Switch = true;
+                        break;
+                    }
+                }
+                if (Switch) {
+                    a[i].parentNode.insertBefore(a[i+1], a[i]);
+                    switching = true;
+                }
+            } 
+        }          
+        </script>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    margin-top: 5px;
+}
+nav {
+    background-color: rgb(8, 8, 85);
+}
+h1 {
+    color: rgb(255, 248, 220);
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+#nav-list li a {
+    color: rgb(255, 248, 220);
+}
+#nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 89vw;
+    margin: 0 auto;
+}
+#nav-list li {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;  
+}
+#nav-list li a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.1em;
+}
+li a:hover:not(.active) {
+    border-radius: 5px;
+}
+#nav-list li a:hover:not(.active) {
+    color: rgb(8, 8, 85);
+    background-color: rgb(255, 248, 220);
+}
+#nav-list li .active {
+    background-color: rgba(255, 248, 220, 0.795);
+    color: rgb(8, 8, 85);
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+main {
+    width:88vw;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+#main{
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navburger {
+    display: none;
+}
+div {
+    margin: 15px auto;
+    width: 24.45em;
+    border: ridge;
+    border-image: linear-gradient(to right, rgba(8, 8, 85, 0.363), rgba(8, 8, 85, 0.836)) 70 stretch;
+}
+img {
+    width: 24.1em;
+    height: 14em;
+}
+div a {
+    text-decoration: none;
+    color:rgb(8, 8, 85);
+    text-align: center;
+}
+footer {
+    background-color: rgb(8, 8, 85);
+    overflow: auto;
+    margin-top: 100px;
+}
+footer [class^=fa] {
+    color: rgba(255, 248, 220, 0.795);
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-left: 16px ;
+    text-align: center;
+}
+small {
+    color: rgba(255, 248, 220, 0.795);
+    margin-bottom: 0;
+    text-align: center;
+}
+footer p {
+    color: rgba(255, 248, 220, 0.795);
+    text-align: center;
+    margin: 15px;
+}
+footer section:first-child {
+    color: rgba(255, 248, 220, 0.795);
+    float: right;
+    margin: 30px;
+}
+#footerinfo {
+   margin-top: 30px;
+}
+hr {
+    width: 100vw;
+}
+[class~=fa-book] {
+    color: rgb(255, 248, 220);
+    font-size: 1.2em;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 20px;
+}
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    font-size: 20px;
+}
+summary {
+    font-size: 20px;
+}
+#contmain {
+    width: 50%;
+}
+details {
+    margin: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+details p {
+    font-size: 20px;
+    width: 50%
+}
+label {
+    font-size: 20px;
+}
+#form {
+    margin-left: auto;
+    margin-right: auto;
+    width:initial;
+    display: block;
+    border: none;
+}
+
+input[type=submit] {
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(8, 8, 85);
+    color: rgb(255, 248, 220);
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgb(5, 5, 41);
+}
+input[type=checkbox] {
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+    padding: 10px;
+}
+p {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:890px) {
+
+    [class~=fa-times] {
+        float: left;
+        display: none;
+    }
+    div.homeimg {
+        width: 22.6em;
+    }
+    img {
+        width: 22.39em;
+    }
+    }
+    input[type=submit] {
+        width: 30%;
+        padding: 10px;
+        font-size: 20px;
+        background-color: rgb(8, 8, 85);
+        color: rgb(255, 248, 220);
+        cursor: pointer;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 20px;
+    }
+    input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        font-size: 20px;
+    }
+    details p {
+        width: 100%;
+    }   
+@media screen and (max-width:721px) {
+    #nav-list li a {
+        font-size: 1em;
+    }
+    div.homeimg {
+        width: 26.6em;
+    }
+    img {
+        width: 26.3em;
+    }    
+}
+@media screen and (max-width: 650px )  {
+    #nav-list {
+        display: none;
+    }
+    #nav-list li {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 30px;
+        text-align: center;
+    }
+    #nav-list li a {
+        background-color: rgb(8, 8, 85);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .navburger {
+        display: initial;
+    }
+    #bars, #ex {
+        color: rgb(255, 248, 220);
+        font-size: 1.1em;
+        margin-left: 5px;
+    }
+    a:hover #bars, a:hover #ex {
+        color: rgb(202, 118, 118);
+        font-size: 1.5em;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    div.homeimg {
+        width: 23.5em;
+    }
+    img {
+        width: 23.1em;
+    }
+}

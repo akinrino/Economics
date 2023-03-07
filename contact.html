@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/0ce5433672.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/temp.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ECONOMICS DICOURSE</h1>
+            <a href="javascript:void(0);" class="navburger" onclick="hamburger()"><i id="bars" class="fas fa-bars" aria-label="bar"></i>
+                <i id="ex" class="fas fa-times"></i></a>
+            <script src="script/navigation.js"></script>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="microeconomics.html">Microeconomics</a></li>
+                <li><a href="macroeconomics.html">Macroeconomics</a></li>
+                <li><a href="dictionary.html">Dictionary</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+    <main id="contmain">
+        <p>Contact us at contact@economicsdiscourse.com or fill the form below if you have complaints or suggestions.</p>
+        <div id="form">
+            <form action="mailto:contact@economicsdiscourse.com" method="post" enctype="multipart/form-data" name="EmailForm">
+                <label>First Name <span></span><br><input type="text" id="fname"></label><br>
+                <label>Last Name <span></span><br><input type="text" id="lname"></label><br>
+                <label>Is your Prefered name the same as your First Name?<br><input id="checkp" onclick="checkpname()" type="checkbox"></label><br>
+                <label>Prefered name<br><input id="pname" type="text"></label><br>
+                <label>Email <span></span><br><input type="email" id="email"></label><br>
+                <input type="text" id="txt" placeholder="Type in your message" style="height: 100px;"><span></span><br><br>
+                <input type="submit" value="Submit" onclick="return validation()">
+            </form>
+            <script src="script/formvalid.js"></script>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h3>Follow Economics Discourse</h3>
+            <article>
+                <i class="fab fa-twitter" aria-label="twitter"></i>
+                <i class="fab fa-instagram" aria-label="instagram"></i>
+                <i class="fab fa-facebook" aria-label="facebook"></i>
+                <i class="fab fa-youtube" aria-label="youtube"></i>
+                <i class="fab fa-linkedin" aria-label="linkedIn"></i>
+            </article>
+        </section>
+        <section>
+            <p id="footerinfo">Economics Discourse is optimized for learning about economics. 
+                While using this site, you agree to have read and accepted our 
+                terms of use, cookie and privacy policy.
+            </p>
+            <hr>
+            <small><p>&copy; 2022 All Rights Reserved - Economics Discourse </p></small>
+        </section>
+    </footer>    
+</body>
+</html>
